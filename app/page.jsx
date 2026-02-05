@@ -13,11 +13,11 @@ import {
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import SplitText from './components/SplitText';
-import ScrollStack, { ScrollStackItem } from "./components/ScrollStack";
 import EducationExperience from "./components/EducationExperience";
 import ProjectsCertificates from "./components/ProjectsCertificates";
+import TiltedCard from "./components/TiltedCard";
 import Contact from "./components/Contact";
-import LeadershipInvolvement from "./components/LeadershipInvolvement";
+import LeadershipInvolvement from "./components/LeadershipInvolvementSimple";
 import './StarBorder.css';
 
 const BASE_LOGOS = [
@@ -270,43 +270,29 @@ export default function HomePage() {
       {/* Projects & Certificates with scroll-float effect */}
       <ProjectsCertificates />
 
-      {/* Scroll stack about section */}
-      <div className="mt-24 max-w-5xl mx-auto">
-        <ScrollStack>
-          <ScrollStackItem>
-            <h2 className="text-2xl md:text-3xl font-semibold text-sky-300 mb-3">
-              Who I am
-            </h2>
-            <p className="text-sm md:text-base text-slate-100">
-              I&apos;m Prajwal, a Computer Science student and developer who enjoys
-              building clean, interactive web experiences and learning new
-              technologies.
+      {/* What I'm looking for - tilted card */}
+      <section className="mt-24 px-4 lg:px-12">
+        <div className="max-w-5xl mx-auto">
+          <TiltedCard title="What I'm looking for">
+            <p>
+              I focus on building modern, responsive web apps with React and
+              Next.js, and I enjoy refining the details that make a product feel
+              premium—clean layouts, subtle animations, and smooth user flows.
+              On the backend, I work heavily with Java and Spring Boot,
+              designing REST APIs, integrating databases (MySQL/MSSQL), and
+              writing testable, maintainable code with solid engineering
+              practices.
             </p>
-          </ScrollStackItem>
-
-          <ScrollStackItem>
-            <h2 className="text-2xl md:text-3xl font-semibold text-sky-300 mb-3">
-              What I work on
-            </h2>
-            <p className="text-sm md:text-base text-slate-100">
-              I focus on modern frontend development with React and Next.js,
-              and I like crafting polished UI details, animations, and smooth
-              user flows.
+            <p className="mt-4">
+              I’ve also worked on data-heavy and validation-focused systems in
+              production, where performance and correctness matter. That
+              experience has made me comfortable improving query efficiency,
+              strengthening validation logic, and shipping features that are
+              reliable at scale.
             </p>
-          </ScrollStackItem>
-
-          <ScrollStackItem>
-            <h2 className="text-2xl md:text-3xl font-semibold text-sky-300 mb-3">
-              What I&apos;m looking for
-            </h2>
-            <p className="text-sm md:text-base text-slate-100">
-              I&apos;m excited about opportunities where I can contribute to real
-              projects, collaborate with strong teams, and keep growing as a
-              developer.
-            </p>
-          </ScrollStackItem>
-        </ScrollStack>
-      </div>
+          </TiltedCard>
+        </div>
+      </section>
 
       {/* Leadership & campus involvement section */}
       <LeadershipInvolvement />
