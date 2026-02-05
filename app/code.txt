@@ -1,0 +1,90 @@
+
+
+
+
+{/* Container with thicker neon orange animated corners */}
+<div className="relative mx-4 lg:mx-20 my-10">
+  {/* Main content container */}
+  <div className="bg-white bg-opacity-10 backdrop-blur-sm p-12 rounded-lg shadow-lg min-h-[300px] relative z-10">
+    {/* Circular profile picture */}
+    <div className="flex justify-center mb-6">
+      <img
+        src="/profile.jpeg" // Replace this with your actual profile image path
+        alt="Profile"
+        className="w-80 h-80 rounded-full object-cover border-4 border-blue-600 shadow-lg"
+      />
+    </div>
+
+    <p className="text-lg text-gray-100">
+      I'm Prajwal, a passionate Computer Science student and developer.
+    </p>
+
+
+    <div className="flex justify-center space-x-4 mb-6">
+  {/* LinkedIn Button */}
+  <a
+    href="https://www.linkedin.com/in/prajwalhulamani/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+  >
+    <img src="/linkedin-original.svg" alt="LinkedIn" className="w-6 h-6" />
+  </a>
+
+  {/* X (Twitter) Button */}
+  <a
+    href="https://twitter.com/yourprofile"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+  >
+    <img src="/x.jpg" alt="X" className="w-6 h-6" />
+  </a>
+
+  {/* GitHub Button */}
+  <a
+    href="https://github.com/PrajwalMH"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+  >
+    <img src="/github-inverted.svg" alt="GitHub" className="w-6 h-6" />
+  </a>
+
+  {/* LeetCode Button */}
+  <a
+    href="https://leetcode.com/u/PrajwalMH/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+  >
+    <img src="/leetcode.svg" alt="LeetCode" className="w-6 h-6" />
+  </a>
+
+  {/* HackerRank Button */}
+  <a
+    href="https://www.hackerrank.com/profile/prajwalhulamani"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-12 h-12 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+  >
+    <img src="/hackerrank-icon.png" alt="HackerRank" className="w-6 h-6" />
+  </a>
+</div>
+
+
+  </div>
+
+
+
+
+
+  {/* Neon animated corners */}
+   <div className="absolute inset-0 pointer-events-none">
+    {/* Top-left corner */}
+    <div className="absolute top-0 left-0 w-14 h-14 border-t-8 border-l-8 border-orange-500 rounded-tl-lg neon-corner"></div>
+
+    {/* Bottom-right corner */}
+     <div className="absolute bottom-0 right-0 w-14 h-14 border-b-8 border-r-8 border-orange-500 rounded-br-lg neon-corner"></div>
+  </div>
+</div>  
