@@ -88,7 +88,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-lg text-gray-100">
-            I'm Prajwal, a passionate Computer Science student and developer.
+            I am Prajwal, a passionate Computer Science student and developer.
           </p>
 
 
