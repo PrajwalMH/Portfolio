@@ -17,7 +17,7 @@ import EducationExperience from "./components/EducationExperience";
 import ProjectsCertificates from "./components/ProjectsCertificates";
 import TiltedCard from "./components/TiltedCard";
 import Contact from "./components/Contact";
-import LeadershipInvolvement from "./components/LeadershipInvolvementSimple";
+import LeadershipInvolvement from "./components/LeadershipInvolvementOrg";
 import './StarBorder.css';
 
 const BASE_LOGOS = [

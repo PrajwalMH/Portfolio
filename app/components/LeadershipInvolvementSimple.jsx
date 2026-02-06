@@ -60,6 +60,25 @@ export default function LeadershipInvolvement() {
               </ul>
             </div>
 
+            <div className="mt-2 flex flex-col md:flex-row gap-4 items-start">
+              <div className="shrink-0">
+                <img
+                  src="/yodha.jpg"
+                  alt="NSS Yodha: The Warrior Within"
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-cover border border-slate-600 shadow-md"
+                />
+              </div>
+              <div className="text-xs md:text-sm text-slate-300">
+                <p className="font-semibold text-sky-200">
+                  NSS (Yodha: The Warrior Within)
+                </p>
+                <p className="mt-1">
+                  Volunteer-driven initiative focused on community service,
+                  social awareness, and civic responsibility.
+                </p>
+              </div>
+            </div>
+
             <div>
               <h3 className="text-lg md:text-xl font-semibold text-sky-200">
                 Achievements &amp; Leadership
@@ -105,4 +124,3 @@ export default function LeadershipInvolvement() {
     </section>
   );
 }
-

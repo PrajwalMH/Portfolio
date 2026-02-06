@@ -236,6 +236,25 @@ h1 {
     0 0 20px rgba(20,121,234,0.28);
 }
 
+@keyframes true-focus {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.25;
+  }
+  40% {
+    background-position: 50% 50%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 0.4;
+  }
+}
+
+.animate-true-focus {
+  animation: true-focus 2.4s ease-out forwards;
+}
+
 /* About label: cloud border + faded text */
 .about-label {
   position: absolute;

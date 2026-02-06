@@ -187,6 +187,9 @@ export default function PillNav({
               <li key={item.href ?? i} className="flex h-full">
                 <a
                   href={item.href}
+                  download={item.download}
+                  target={item.target}
+                  rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
                   className="relative inline-flex items-center justify-center h-full no-underline rounded-full box-border font-semibold text-[16px] md:text-lg leading-none uppercase tracking-[0.24em] whitespace-nowrap cursor-pointer px-0 overflow-hidden"
                   style={pillStyle}
                   onMouseEnter={() => handleEnter(i)}

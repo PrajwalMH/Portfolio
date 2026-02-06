@@ -12,7 +12,12 @@ export default function Navbar() {
       label: "Contact",
       href: "/contact",
     },
-    { label: "Resume", href: "/#resume" },
+    {
+      label: "Resume",
+      href: "/Prajwal%20Mrithyunjay%20Hulamani.pdf",
+      download: "Prajwal Mrithyunjay Hulamani.pdf",
+      target: "_blank",
+    },
   ];
 
   return (
@@ -31,4 +36,3 @@ export default function Navbar() {
     </header>
   );
 }
-

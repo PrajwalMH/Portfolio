@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import DecryptedText from "./DecryptedText";
 
 const TIMELINE_ITEMS = [
   {
@@ -22,6 +23,7 @@ const TIMELINE_ITEMS = [
 
 export default function EducationExperience() {
   const containerRef = useRef(null);
+  const [titleActive, setTitleActive] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -29,23 +31,39 @@ export default function EducationExperience() {
     if (!container) return;
 
     const cards = container.querySelectorAll("[data-edu-card]");
-    if (!cards.length) return;
 
-    const observer = new IntersectionObserver(
+    const cardsObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("opacity-100", "translate-y-0");
-            observer.unobserve(entry.target);
+            cardsObserver.unobserve(entry.target);
           }
         });
       },
       { threshold: 0.25 }
     );
 
-    cards.forEach((card) => observer.observe(card));
+    cards.forEach((card) => cardsObserver.observe(card));
 
-    return () => observer.disconnect();
+    const titleObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTitleActive(true);
+            titleObserver.disconnect();
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    titleObserver.observe(container);
+
+    return () => {
+      cardsObserver.disconnect();
+      titleObserver.disconnect();
+    };
   }, []);
 
   const EDUCATION_EXPERIENCE_ITEMS = [
@@ -92,7 +110,7 @@ export default function EducationExperience() {
       <div className="flex flex-col md:flex-row gap-10 md:gap-14 items-start">
         <div className="md:w-1/3">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-sky-300">
-            Education &amp; Experience
+            <DecryptedText text="Education & Experience" active={titleActive} />
           </h2>
           <p className="mt-4 text-base md:text-lg lg:text-xl text-slate-200/80">
             A quick look at my academic journey and the hands-on experience
