@@ -43,7 +43,7 @@ export default function HomePage() {
         {/** Name will animate only after the greeting completes */}
         {!showName && (
           <SplitText
-            text={"Hello World! I'm"}
+            text={"Hello World! I am"}
             tag="h2"
             className="ttext-5xl md:text-7xl lg:text-8xl font-normal text-white mb-5"
             delay={0.04}
