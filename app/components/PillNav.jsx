@@ -149,7 +149,7 @@ export default function PillNav({
     ["--pill-text"]: pillTextColor,
     // Responsive: smaller height/padding on phones, original on desktop
     ["--nav-h"]: "clamp(32px, 5vw, 58px)",
-    ["--pill-pad-x"]: "clamp(2px, 1.2vw, 30px)",
+    ["--pill-pad-x"]: "clamp(4px, 1.2vw, 30px)",
     ["--pill-gap"]: "6px",
   };
 

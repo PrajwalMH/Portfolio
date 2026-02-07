@@ -418,9 +418,9 @@ h1 {
 @media (max-width: 768px) {
   .about-label,
   .projects-label {
-    width: 34%;
-    height: 120px;
-    top: 47%;
+    width: 30%;
+    height: 100px;
+    top: 40%;
     transform: translateY(-50%);
     opacity: 1;
     animation: none;
@@ -436,8 +436,8 @@ h1 {
 
   .about-label span,
   .projects-label span {
-    font-size: 0.9rem;
-    letter-spacing: 0.16em;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
     text-align: center;
   }
 }
