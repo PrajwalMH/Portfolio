@@ -392,6 +392,32 @@ h1 {
 }
 
 
+/* Mobile layout tweaks for hero bubbles */
+@media (max-width: 768px) {
+  .about-label,
+  .projects-label {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 0.5rem auto;
+    opacity: 1;
+    animation: none;
+  }
+
+  .about-label span,
+  .projects-label span {
+    font-size: 1.1rem;
+    letter-spacing: 0.16em;
+    text-align: center;
+  }
+}
+
+
 /*Star Border Animation*/
 .star-border-container {
   display: inline-block;

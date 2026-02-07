@@ -45,7 +45,7 @@ export default function HomePage() {
           <SplitText
             text={"Hello World! I am"}
             tag="h2"
-            className="ttext-5xl md:text-7xl lg:text-8xl font-normal text-white mb-5"
+            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal text-white mb-5"
             delay={0.04}
             duration={0.7}
             onComplete={() => {
@@ -58,7 +58,7 @@ export default function HomePage() {
           <SplitText
             text={"Prajwal Mrithyunjay Hulamani"}
             tag="h1"
-            className="text-6xl md:text-7xl lg:text-8xl font-normal text-white mb-5"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-normal text-white mb-5"
             delay={0.02}
             duration={1}
           />
