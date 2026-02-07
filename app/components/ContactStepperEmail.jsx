@@ -96,7 +96,7 @@ export default function ContactStepperEmail({ steps = STEPS }) {
         </div>
       )}
       {/* Step bullets + connectors + labels in one row */}
-      <div className="flex w-full items-start justify-between gap-6">
+      <div className="flex w-full items-start justify-between gap-3 md:gap-6">
         {steps.map((step, index) => {
           const isActive = index === activeIndex;
           const isCompleted = index < activeIndex;
@@ -109,7 +109,7 @@ export default function ContactStepperEmail({ steps = STEPS }) {
                 <button
                   type="button"
                   onClick={() => setActiveIndex(index)}
-                  className="relative flex items-center justify-center w-10 h-10 rounded-full border-2 border-slate-600 bg-slate-900/80 shadow-md transition-all hover:shadow-lg hover:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+                  className="relative flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-slate-600 bg-slate-900/80 shadow-md transition-all hover:shadow-lg hover:border-sky-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-900"
                 >
                   <span
                     className={`absolute inset-[2px] rounded-full transition-colors ${
@@ -141,7 +141,7 @@ export default function ContactStepperEmail({ steps = STEPS }) {
               {/* Connector line between this step and the next */}
               {!isLast && (
                 <div
-                  className={`h-[3px] w-20 md:w-28 rounded-full transition-colors ${
+                  className={`h-[3px] w-12 md:w-20 rounded-full transition-colors ${
                     isCompleted
                       ? "bg-gradient-to-r from-sky-500 via-blue-500 to-purple-500"
                       : "bg-slate-700"
