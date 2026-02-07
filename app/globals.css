@@ -3,19 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-  /* Pill navigation text sizing */
-  .pill-link {
-    font-size: 0.72rem;
-    letter-spacing: 0.16em;
-  }
-
-  @media (min-width: 768px) {
-    .pill-link {
-      font-size: 1rem;
-      letter-spacing: 0.24em;
-    }
-  }
-
   /* Reusable page background gradient used on home, contact, etc. */
   .page-gradient-bg {
     @apply bg-gradient-to-tr from-black via-blue-900 to-black;
@@ -426,37 +413,6 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
-
-/* Mobile layout tweaks for hero bubbles */
-@media (max-width: 768px) {
-  /* Keep left/right layout but smaller so the center stays clear */
-  .about-label,
-  .projects-label {
-    width: 40%;
-    height: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-    animation: none;
-  }
-
-  .about-label {
-    right: 4%;
-  }
-
-  .projects-label {
-    left: 4%;
-  }
-
-  .about-label span,
-  .projects-label span {
-    font-size: 0.85rem;
-    letter-spacing: 0.16em;
-    text-align: center;
-  }
-}
-
 
 /*Star Border Animation*/
 .star-border-container {
