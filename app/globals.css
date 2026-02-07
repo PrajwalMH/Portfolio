@@ -414,6 +414,34 @@ h1 {
   background-clip: text;
 }
 
+/* Mobile layout tweaks for hero speech bubbles */
+@media (max-width: 768px) {
+  .about-label,
+  .projects-label {
+    width: 42%;
+    height: auto;
+    top: 48%;
+    transform: translateY(-50%);
+    opacity: 1;
+    animation: none;
+  }
+
+  .about-label {
+    right: 4%;
+  }
+
+  .projects-label {
+    left: 4%;
+  }
+
+  .about-label span,
+  .projects-label span {
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
+    text-align: center;
+  }
+}
+
 /*Star Border Animation*/
 .star-border-container {
   display: inline-block;
