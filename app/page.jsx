@@ -18,6 +18,7 @@ import ProjectsCertificates from "./components/ProjectsCertificates";
 import TiltedCard from "./components/TiltedCard";
 import Contact from "./components/Contact";
 import LeadershipInvolvement from "./components/LeadershipInvolvementOrg";
+import TypedQuotes from "./components/TypedQuotes";
 import './StarBorder.css';
 
 const BASE_LOGOS = [
@@ -229,6 +230,9 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Motivational typewriter quotes (above About Me) */}
+      <TypedQuotes />
 
       {/* About me section below logo loop */}
       <div id="about" className="mt-16 px-4 lg:px-12">

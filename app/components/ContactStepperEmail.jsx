@@ -157,18 +157,18 @@ export default function ContactStepperEmail({ steps = STEPS }) {
       <div
         className={`mt-6 rounded-xl bg-slate-900/70 border border-slate-700 px-5 py-4 text-left ${
           activeIndex === 0
-            ? "min-h-[320px] flex flex-col justify-center"
+            ? "min-h-[360px] sm:min-h-[380px] md:min-h-[420px] flex flex-col justify-center"
             : "min-h-[380px] space-y-3"
         }`}
       >
         {/* Step 1: welcome message */}
         {activeIndex === 0 && (
           <div className="step-animated">
-            <h2 className="text-xl md:text-2xl font-semibold text-violet-400">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-violet-400">
               If you’ve landed here, you’re already one step closer to a
               meaningful collaboration.
             </h2>
-            <p className="text-sm md:text-base text-slate-200 mt-2">
+            <p className="text-base md:text-lg text-slate-200 mt-3">
               Move through the steps to share your details and message.
             </p>
           </div>
