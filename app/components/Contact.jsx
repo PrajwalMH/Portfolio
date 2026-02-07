@@ -32,22 +32,24 @@ export default function Contact() {
     <div className="relative mx-4 lg:mx-20 my-10 overflow-hidden">
       {/* Glassmorphism card shell, same as home */}
       <div className="bg-white bg-opacity-10 backdrop-blur-sm p-12 rounded-lg shadow-lg min-h-[300px] relative z-10 star-border">
-        <h1 className="mb-6" ref={titleRef}>
-          {showEffect ? (
-            <TrueFocus
-              sentence="Let's Connect"
-              manualMode={false}
-              blurAmount={5}
-              borderColor="#38bdf8"
-              animationDuration={0.5}
-              pauseBetweenAnimations={1}
-              wordClassName="text-4xl md:text-5xl lg:text-6xl"
-            />
-          ) : (
-            <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-sky-300">
-              Let&apos;s Connect
-            </span>
-          )}
+        <h1 className="mb-6 flex justify-center" ref={titleRef}>
+          <div className="inline-flex items-center px-5 py-3 sm:px-7 sm:py-4 md:px-9 md:py-5 rounded-full bg-sky-500/10 border border-sky-500/40 shadow-[0_0_40px_rgba(56,189,248,0.45)]">
+            {showEffect ? (
+              <TrueFocus
+                sentence="Let's Connect"
+                manualMode={false}
+                blurAmount={5}
+                borderColor="#38bdf8"
+                animationDuration={0.5}
+                pauseBetweenAnimations={1}
+                wordClassName="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
+              />
+            ) : (
+              <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-sky-300">
+                Let&apos;s Connect
+              </span>
+            )}
+          </div>
         </h1>
         <p className="text-sm md:text-base text-gray-200 mb-4">
           Use the steps below as a guide for what to include when you reach out.

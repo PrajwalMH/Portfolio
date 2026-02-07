@@ -418,26 +418,23 @@ h1 {
 @media (max-width: 768px) {
   .about-label,
   .projects-label {
-    width: 30%;
-    height: 100px;
-    top: 30%;
-    transform: translateY(-50%);
-    opacity: 1;
-    animation: none;
+    width: min(60%, 260px);
+    height: 160px;
+    top: 38%;
   }
 
   .about-label {
-    right: 4%;
+    right: 6%;
   }
 
   .projects-label {
-    left: 4%;
+    left: 6%;
   }
 
   .about-label span,
   .projects-label span {
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
+    font-size: 0.9rem;
+    letter-spacing: 0.16em;
     text-align: center;
   }
 }
