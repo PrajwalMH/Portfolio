@@ -785,3 +785,10 @@ h1 {
     @apply bg-primary text-white;
   }
 }
+
+@layer base {
+  html {
+    /* Approximate a global 80% zoom via root font-size */
+    font-size: 80%;
+  }
+}

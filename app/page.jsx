@@ -38,7 +38,7 @@ const LOGOS = [...BASE_LOGOS, ...BASE_LOGOS];
 export default function HomePage() {
   const [showName, setShowName] = useState(false);
   return (
-    <div className="text-center py-20 bg-gradient-to-tr from-black via-blue-900 to-black" >
+    <div className="text-center py-12 md:py-20 bg-gradient-to-tr from-black via-blue-900 to-black">
       <div>
         {/** Name will animate only after the greeting completes */}
         {!showName && (
@@ -64,12 +64,9 @@ export default function HomePage() {
           />
         )}
       </div>
-      
-
-      
-        <div className="relative mx-4 lg:mx-20 my-10 overflow-hidden">
-          {/* Main content container */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-sm p-12 rounded-lg shadow-lg min-h-[300px] relative z-10 star-border">
+      <div className="relative mx-4 lg:mx-20 my-10 overflow-hidden">
+        {/* Main content container */}
+        <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 sm:p-8 md:p-10 lg:p-12 rounded-lg shadow-lg min-h-[300px] relative z-10 star-border">
           {/* Top‑right About me label */}
               <a href="#about" className="about-label">
                 <span>About Me</span>
@@ -83,11 +80,11 @@ export default function HomePage() {
             <img
               src="/profile.jpeg" // Replace this with your actual profile image path
               alt="Profile"
-              className="w-80 h-80 rounded-full object-cover shadow-lg"
+              className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-lg"
             />
           </div>
 
-          <p className="text-lg text-gray-100">
+          <p className="text-base md:text-lg text-gray-100">
             I am Prajwal, a passionate Computer Science student and developer.
           </p>
 
@@ -98,9 +95,9 @@ export default function HomePage() {
               href="https://www.linkedin.com/in/prajwalhulamani/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+              className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/linkedin-original.svg" alt="LinkedIn" className="w-10 h-10" />
+              <img src="/linkedin-original.svg" alt="LinkedIn" className="w-8 h-8 md:w-10 md:h-10" />
             </a>
 
             {/* X (Twitter) Button */}
@@ -108,9 +105,9 @@ export default function HomePage() {
               href="https://twitter.com/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+              className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/x.jpg" alt="X" className="w-10 h-10" />
+              <img src="/x.jpg" alt="X" className="w-8 h-8 md:w-10 md:h-10" />
             </a>
 
             {/* GitHub Button */}
@@ -118,9 +115,9 @@ export default function HomePage() {
               href="https://github.com/PrajwalMH"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+              className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/github-inverted.svg" alt="GitHub" className="w-10 h-10" />
+              <img src="/github-inverted.svg" alt="GitHub" className="w-8 h-8 md:w-10 md:h-10" />
             </a>
 
             {/* LeetCode Button */}
@@ -128,9 +125,9 @@ export default function HomePage() {
               href="https://leetcode.com/u/PrajwalMH/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+              className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/leetcode.svg" alt="LeetCode" className="w-10 h-10" />
+              <img src="/leetcode.svg" alt="LeetCode" className="w-8 h-8 md:w-10 md:h-10" />
             </a>
 
             {/* HackerRank Button */}
