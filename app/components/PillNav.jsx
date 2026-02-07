@@ -147,8 +147,9 @@ export default function PillNav({
     ["--pill-bg"]: pillColor,
     ["--hover-text"]: hoveredPillTextColor,
     ["--pill-text"]: pillTextColor,
-    ["--nav-h"]: "58px",
-    ["--pill-pad-x"]: "30px",
+    // Responsive: smaller height and padding on phones, original on desktop
+    ["--nav-h"]: "clamp(40px, 7vw, 58px)",
+    ["--pill-pad-x"]: "clamp(10px, 2.4vw, 30px)",
     ["--pill-gap"]: "6px",
   };
 
@@ -190,7 +191,7 @@ export default function PillNav({
                   download={item.download}
                   target={item.target}
                   rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
-                  className="relative inline-flex items-center justify-center h-full no-underline rounded-full box-border font-semibold text-[16px] md:text-lg leading-none uppercase tracking-[0.24em] whitespace-nowrap cursor-pointer px-0 overflow-hidden"
+                  className="relative inline-flex items-center justify-center h-full no-underline rounded-full box-border font-semibold text-[11px] md:text-lg leading-none uppercase tracking-[0.16em] md:tracking-[0.24em] whitespace-nowrap cursor-pointer px-0 overflow-hidden"
                   style={pillStyle}
                   onMouseEnter={() => handleEnter(i)}
                   onMouseLeave={() => handleLeave(i)}
