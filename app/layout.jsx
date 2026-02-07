@@ -6,6 +6,11 @@ import './globals.css';
 export const metadata = {
   title: "Prajwal's Portfolio",
   description: "Portfolio website for Prajwal Mrithyunjay Hulamani",
+  icons: {
+    icon: "/layout.jpg",
+    shortcut: "/layout.jpg",
+    apple: "/layout.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,5 +24,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
 
