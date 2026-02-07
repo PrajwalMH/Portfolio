@@ -154,7 +154,13 @@ export default function ContactStepperEmail({ steps = STEPS }) {
       </div>
 
       {/* Step content */}
-      <div className="mt-6 rounded-xl bg-slate-900/70 border border-slate-700 px-5 py-4 text-left space-y-3 min-h-[380px]">
+      <div
+        className={`mt-6 rounded-xl bg-slate-900/70 border border-slate-700 px-5 py-4 text-left ${
+          activeIndex === 0
+            ? "min-h-[320px] flex flex-col justify-center"
+            : "min-h-[380px] space-y-3"
+        }`}
+      >
         {/* Step 1: welcome message */}
         {activeIndex === 0 && (
           <div className="step-animated">
