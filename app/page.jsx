@@ -97,7 +97,11 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/linkedin-original.svg" alt="LinkedIn" className="w-8 h-8 md:w-10 md:h-10" />
+              <img
+                src="/linkedin-original.svg"
+                alt="LinkedIn"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              />
             </a>
 
             {/* X (Twitter) Button */}
@@ -107,7 +111,11 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/x.jpg" alt="X" className="w-8 h-8 md:w-10 md:h-10" />
+              <img
+                src="/x.jpg"
+                alt="X"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              />
             </a>
 
             {/* GitHub Button */}
@@ -117,7 +125,11 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/github-inverted.svg" alt="GitHub" className="w-8 h-8 md:w-10 md:h-10" />
+              <img
+                src="/github-inverted.svg"
+                alt="GitHub"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              />
             </a>
 
             {/* LeetCode Button */}
@@ -127,7 +139,11 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/leetcode.svg" alt="LeetCode" className="w-8 h-8 md:w-10 md:h-10" />
+              <img
+                src="/leetcode.svg"
+                alt="LeetCode"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              />
             </a>
 
             {/* HackerRank Button */}
@@ -135,17 +151,25 @@ export default function HomePage() {
               href="https://www.hackerrank.com/profile/prajwalhulamani"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-16 h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+              className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/hackerrank-icon.png" alt="HackerRank" className="w-10 h-10" />
+              <img
+                src="/hackerrank-icon.png"
+                alt="HackerRank"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              />
             </a>
 
             {/* Gmail Button */}
             <a
               href="mailto:prajwalhulamani5111999@gmail.com"
-              className="w-16 h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
+              className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-gray-700 rounded-full shadow-md hover:bg-gray-600 transition-colors duration-300"
             >
-              <img src="/gmail.webp" alt="Gmail" className="w-10 h-10 object-contain" />
+              <img
+                src="/gmail.webp"
+                alt="Gmail"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
+              />
             </a>
           </div>
         </div>

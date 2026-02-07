@@ -149,7 +149,7 @@ export default function PillNav({
     ["--pill-text"]: pillTextColor,
     // Slightly responsive sizing so mobile nav is more compact
     ["--nav-h"]: "clamp(40px, 7vw, 58px)",
-    ["--pill-pad-x"]: "clamp(14px, 3.2vw, 30px)",
+    ["--pill-pad-x"]: "clamp(10px, 2.4vw, 26px)",
     ["--pill-gap"]: "6px",
   };
 
@@ -163,15 +163,15 @@ export default function PillNav({
       {/* Pill container */}
       <nav
         ref={navItemsRef}
-        className="relative flex items-center rounded-full"
+        className="pill-nav-root relative flex items-center rounded-full"
         style={{
-          height: "var(--nav-h)",
+          minHeight: "var(--nav-h)",
           background: "var(--base)",
         }}
         aria-label="Primary"
       >
         <ul
-          className="flex flex-wrap md:flex-nowrap items-stretch m-0 p-[3px] h-full"
+          className="flex flex-wrap md:flex-nowrap items-stretch justify-center m-0 p-[3px] h-full"
           style={{ gap: "var(--pill-gap)" }}
         >
           {navItems.map((item, i) => {
@@ -185,13 +185,16 @@ export default function PillNav({
             };
 
             return (
-              <li key={item.href ?? i} className="flex h-full">
+              <li
+                key={item.href ?? i}
+                className="flex h-full basis-1/3 md:basis-auto"
+              >
                 <a
                   href={item.href}
                   download={item.download}
                   target={item.target}
                   rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
-                  className="relative inline-flex items-center justify-center h-full no-underline rounded-full box-border font-semibold text-[16px] md:text-lg leading-none uppercase tracking-[0.24em] whitespace-nowrap cursor-pointer px-0 overflow-hidden"
+                  className="pill-link relative inline-flex items-center justify-center h-full no-underline rounded-full box-border font-semibold leading-none uppercase whitespace-nowrap cursor-pointer px-0 overflow-hidden"
                   style={pillStyle}
                   onMouseEnter={() => handleEnter(i)}
                   onMouseLeave={() => handleLeave(i)}

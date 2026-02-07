@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer components {
+  /* Pill navigation text sizing */
+  .pill-link {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+  }
+
+  @media (min-width: 768px) {
+    .pill-link {
+      font-size: 1rem;
+      letter-spacing: 0.24em;
+    }
+  }
+
   /* Reusable page background gradient used on home, contact, etc. */
   .page-gradient-bg {
     @apply bg-gradient-to-tr from-black via-blue-900 to-black;
@@ -422,7 +435,7 @@ h1 {
   .projects-label {
     width: 40%;
     height: auto;
-    top: 18%;
+    top: 50%;
     transform: translateY(-50%);
     opacity: 1;
     animation: none;
