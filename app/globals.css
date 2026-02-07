@@ -192,6 +192,29 @@
   }
 }
 
+/* Compact logo strip on small screens */
+@media (max-width: 768px) {
+  .logo-loop {
+    margin-top: 1.5rem;
+    padding: 0.8rem 0;
+  }
+
+  .logo-loop-track {
+    gap: 1.5rem;
+  }
+
+  .logo-loop-item {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+  }
+
+  .logo-loop-item svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* Smooth scrolling for in-page navigation (About, Projects, etc.) */
 html {
   scroll-behavior: smooth;

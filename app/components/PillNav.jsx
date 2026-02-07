@@ -147,8 +147,9 @@ export default function PillNav({
     ["--pill-bg"]: pillColor,
     ["--hover-text"]: hoveredPillTextColor,
     ["--pill-text"]: pillTextColor,
-    ["--nav-h"]: "58px",
-    ["--pill-pad-x"]: "30px",
+    // Slightly responsive sizing so mobile nav is more compact
+    ["--nav-h"]: "clamp(40px, 7vw, 58px)",
+    ["--pill-pad-x"]: "clamp(14px, 3.2vw, 30px)",
     ["--pill-gap"]: "6px",
   };
 
@@ -170,7 +171,7 @@ export default function PillNav({
         aria-label="Primary"
       >
         <ul
-          className="flex items-stretch m-0 p-[3px] h-full"
+          className="flex flex-wrap md:flex-nowrap items-stretch m-0 p-[3px] h-full"
           style={{ gap: "var(--pill-gap)" }}
         >
           {navItems.map((item, i) => {

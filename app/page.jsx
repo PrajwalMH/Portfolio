@@ -45,7 +45,7 @@ export default function HomePage() {
           <SplitText
             text={"Hello World! I am"}
             tag="h2"
-            className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-normal text-white mb-5"
+            className="text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-normal text-white mb-5"
             delay={0.04}
             duration={0.7}
             onComplete={() => {
@@ -58,7 +58,7 @@ export default function HomePage() {
           <SplitText
             text={"Prajwal Mrithyunjay Hulamani"}
             tag="h1"
-            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-normal text-white mb-5"
+            className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-normal text-white mb-5"
             delay={0.02}
             duration={1}
           />
@@ -66,7 +66,7 @@ export default function HomePage() {
       </div>
       <div className="relative mx-4 lg:mx-20 my-10 overflow-hidden">
         {/* Main content container */}
-        <div className="bg-white bg-opacity-10 backdrop-blur-sm p-6 sm:p-8 md:p-10 lg:p-12 rounded-lg shadow-lg min-h-[300px] relative z-10 star-border">
+        <div className="bg-white bg-opacity-10 backdrop-blur-sm p-4 sm:p-6 md:p-10 lg:p-12 rounded-lg shadow-lg min-h-[260px] relative z-10 star-border">
           {/* Top‑right About me label */}
               <a href="#about" className="about-label">
                 <span>About Me</span>
@@ -80,7 +80,7 @@ export default function HomePage() {
             <img
               src="/profile.jpeg" // Replace this with your actual profile image path
               alt="Profile"
-              className="w-40 h-40 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-lg"
+              className="w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full object-cover shadow-lg"
             />
           </div>
 
