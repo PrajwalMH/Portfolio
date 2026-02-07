@@ -147,9 +147,9 @@ export default function PillNav({
     ["--pill-bg"]: pillColor,
     ["--hover-text"]: hoveredPillTextColor,
     ["--pill-text"]: pillTextColor,
-    // Responsive: smaller height and padding on phones, original on desktop
-    ["--nav-h"]: "clamp(40px, 7vw, 58px)",
-    ["--pill-pad-x"]: "clamp(10px, 2.4vw, 30px)",
+    // Responsive: smaller height/padding on phones, original on desktop
+    ["--nav-h"]: "clamp(38px, 6vw, 58px)",
+    ["--pill-pad-x"]: "clamp(8px, 2vw, 30px)",
     ["--pill-gap"]: "6px",
   };
 

@@ -418,9 +418,9 @@ h1 {
 @media (max-width: 768px) {
   .about-label,
   .projects-label {
-    width: 42%;
+    width: 36%;
     height: auto;
-    top: 48%;
+    top: 50%;
     transform: translateY(-50%);
     opacity: 1;
     animation: none;
